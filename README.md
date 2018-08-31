@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# leanstorage-exporter
 
-You can use the [editor on GitHub](https://github.com/xndas/leancloud-export/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> Export LeanStorage data to spreadsheet formats
+> 
+> [Demo](https://royl-design.github.io/leanstorage-exporter/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Supported Formats
 
-### Markdown
+| fileType | file ext | Description                       |
+| :------- | -------: |:--------------------------------- |
+| `xlsx`   | `.xlsx`  | Excel 2007+ XML Format            |
+| `csv`    | `.csv`   | Comma Separated Values            |
+| `html`   | `.html`  | HTML Document                     |
+| `xlsm`   | `.xlsm`  | Excel 2007+ Macro XML Format      |
+| `xlsb`   | `.xlsb`  | Excel 2007+ Binary Format         |
+| `xlml`   | `.xls`   | Excel 2003-2004 (SpreadsheetML)   |
+| `biff2`  | `.xls`   | Excel 2.0 Worksheet format        |
+| `ods`    | `.ods`   | OpenDocument Spreadsheet          |
+| `fods`   | `.fods`  | Flat OpenDocument Spreadsheet     |
+| `sylk`   | `.sylk`  | Symbolic Link (SYLK)              |
+| `dif`    | `.dif`   | Data Interchange Format (DIF)     |
+| `prn`    | `.prn`   | Lotus Formatted Text              |
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Development
 
-```markdown
-Syntax highlighted code block
+```bash
+# build for production
+yarn build
 
-# Header 1
-## Header 2
-### Header 3
+# development mode
+yarn dev
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# serve the bundled dist folder in production mode
+yarn serve
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xndas/leancloud-export/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
